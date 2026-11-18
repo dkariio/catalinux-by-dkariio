@@ -248,7 +248,6 @@ See [`SECURITY.md`](SECURITY.md) before installing software, and [`CONTRIBUTING.
 | Version | `1.0.1` |
 | Language | Bash (Bash 4+) |
 | License | MIT |
-| Repository name suggestion | `dkariio-linux-app-catalog` |
 | Short description (ES) | Catálogo e instalador de aplicaciones Linux en Bash, multidioma y compatible con varios gestores de paquetes. |
 | Short description (EN) | A multilingual Bash Linux app catalog and installer supporting multiple package managers. |
 
