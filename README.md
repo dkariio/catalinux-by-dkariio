@@ -1,4 +1,4 @@
-# 🐧 Dkariio Linux App Catalog
+# 🐧 CataLinux by @dkariio
 
 **A multilingual Linux application catalog and terminal installer — created by [@dkariio](https://www.instagram.com/dkariio/).**
 
