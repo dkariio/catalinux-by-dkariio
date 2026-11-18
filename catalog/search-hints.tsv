@@ -1,0 +1,144 @@
+AdGuard Home	adguardhome
+Alacritty	alacritty
+Android Studio	android-studio
+Anki	anki
+Ansible	ansible
+Apache HTTP Server	apache2
+Apache OpenOffice	openoffice
+Audacity	audacity
+Blender	blender
+Blender Video Editor	blender
+Brave	brave
+CMake	cmake
+Caddy	caddy
+Chromium	chromium
+ClamAV	clamav
+Clang/LLVM	clang
+DBeaver Community	dbeaver
+DOSBox Staging	dosbox-staging
+Discord	discord
+Docker Compose	docker-compose
+Docker Engine	docker
+Dolphin	dolphin
+Dolphin Emulator	dolphin-emu
+Extension Manager	gnome-shell-extension-manager
+Eye of GNOME	eog
+FFmpeg	ffmpeg
+Fail2ban	fail2ban
+FileZilla	filezilla
+Firefox	firefox
+Fish	fish
+FreeCAD	freecad
+GCC	gcc
+GIMP	gimp
+GNOME Builder	gnome-builder
+GNOME Calendar	gnome-calendar
+GNOME Disks	gnome-disk-utility
+GNOME Passwords and Keys (Seahorse)	seahorse
+GNOME Terminal	gnome-terminal
+GNOME To Do	endeavour
+GNOME Tweaks	gnome-tweaks
+GNOME Web (Epiphany)	epiphany
+GNU Emacs	emacs
+GNU Octave	octave
+GNU nano	nano
+GParted	gparted
+Git	git
+GitHub CLI	gh
+GitLab CLI	glab
+GnuCash	gnucash
+GnuPG	gnupg
+Go	golang
+Godot Engine	godot
+Google Chrome	chrome
+Grafana	grafana
+Heroic Games Launcher	heroic
+Home Assistant	home-assistant
+Inkscape	inkscape
+IntelliJ IDEA Community	intellij-idea-community
+JACK Audio Connection Kit	jack
+Jellyfin Media Player	jellyfin-media-player
+Jellyfin Server	jellyfin-server
+KDE Partition Manager	partitionmanager
+KDE System Settings	systemsettings
+Kdenlive	kdenlive
+KeePassXC	keepassxc
+KiCad	kicad
+Kitty	kitty
+Krita	krita
+Kubernetes kubectl	kubectl
+LibreOffice	libreoffice
+LibreWolf	librewolf
+Lutris	lutris
+MPV	mpv
+MariaDB	mariadb
+Microsoft Edge	microsoft-edge
+MongoDB Community Server	mongodb
+MySQL	mysql
+Nautilus (Files)	nautilus
+Nextcloud Desktop	nextcloud-client
+Nginx	nginx
+Nmap	nmap
+Node.js	nodejs
+OBS Studio	obs-studio
+ONLYOFFICE Desktop Editors	onlyoffice
+OpenJDK	openjdk
+OpenSSH	openssh
+Orca Screen Reader	orca
+Pi-hole	pihole
+PostgreSQL	postgresql
+Postman	postman
+Prism Launcher	prismlauncher
+Prometheus	prometheus
+Proton Mail Bridge	protonmail-bridge
+PulseAudio Volume Control	pavucontrol
+PyCharm Community	pycharm-community
+Python 3	python3
+QEMU	qemu
+QGIS	qgis
+Qt Creator	qtcreator
+Redis	redis
+Redshift	redshift
+Remmina	remmina
+RetroArch	retroarch
+Rustup	rustup
+SQLite	sqlite
+Shotcut	shotcut
+Signal Desktop	signal-desktop
+Slack	slack
+Steam	steam
+Stellarium	stellarium
+Syncthing	syncthing
+Tailscale	tailscale
+Telegram Desktop	telegram-desktop
+The Battle for Wesnoth	wesnoth
+The Ur-Quan Masters	uqm
+Thunar	thunar
+Thunderbird	thunderbird
+Timeshift	timeshift
+Tor Browser	torbrowser
+Tuta Mail Desktop	tuta
+UFW	ufw
+Uptime Kuma	uptime-kuma
+VLC	vlc
+Ventoy	ventoy
+VeraCrypt	veracrypt
+Visual Studio Code	code
+VisualBoyAdvance-M	visualboyadvance-m
+Vivaldi	vivaldi
+WireGuard Tools	wireguard-tools
+Wireshark	wireshark
+Xfce Terminal	xfce4-terminal
+Zoom	zoom
+Zotero	zotero
+Zsh	zsh
+balenaEtcher	etcher
+bat	bat
+curl	curl
+darktable	darktable
+fzf	fzf
+rclone	rclone
+ripgrep	ripgrep
+tmux	tmux
+virt-manager	virt-manager
+wget	wget

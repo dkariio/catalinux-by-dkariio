@@ -1,0 +1,970 @@
+001	01	Firefox
+002	01	Chromium
+003	01	Google Chrome
+004	01	Brave
+005	01	Vivaldi
+006	01	Opera
+007	01	Microsoft Edge
+008	01	Tor Browser
+009	01	LibreWolf
+010	01	Ungoogled Chromium
+011	01	GNOME Web (Epiphany)
+012	01	Falkon
+013	01	Konqueror
+014	01	qutebrowser
+015	01	Nyxt
+016	01	Min Browser
+017	01	Floorp
+018	01	Waterfox
+019	01	Pale Moon
+020	01	SeaMonkey
+021	01	Midori
+022	01	Netsurf
+023	02	Thunderbird
+024	02	Betterbird
+025	02	Evolution
+026	02	KMail
+027	02	Geary
+028	02	Mailspring
+029	02	Claws Mail
+030	02	Sylpheed
+031	02	Balsa
+032	02	Tuta Mail Desktop
+033	02	Proton Mail Bridge
+034	02	aerc
+035	02	NeoMutt
+036	02	Alpine Mail
+037	02	KOrganizer
+038	02	GNOME Calendar
+039	02	Merkuro Calendar
+040	02	KAddressBook
+041	02	vdirsyncer
+042	02	khal
+043	03	LibreOffice
+044	03	ONLYOFFICE Desktop Editors
+045	03	WPS Office
+046	03	FreeOffice
+047	03	Calligra Suite
+048	03	Apache OpenOffice
+049	03	AbiWord
+050	03	Gnumeric
+051	03	Collabora Office
+052	03	SoftMaker Office
+053	03	FocusWriter
+054	03	Ghostwriter
+055	03	Apostrophe
+056	03	MarkText
+057	03	Typora
+058	03	Zettlr
+059	03	Joplin
+060	03	Obsidian
+061	03	Logseq
+062	03	Trilium Notes
+063	03	Standard Notes
+064	03	QOwnNotes
+065	03	Notesnook
+066	03	CherryTree
+067	03	AppFlowy
+068	03	Anytype
+069	03	SiYuan
+070	03	XMind
+071	03	Freeplane
+072	03	Planner
+073	03	Taskwarrior
+074	03	Super Productivity
+075	03	Getting Things GNOME
+076	03	GNOME To Do
+077	03	KTimeTracker
+078	04	Okular
+079	04	Evince
+080	04	Atril
+081	04	Xournal++
+082	04	PDF Arranger
+083	04	PDFsam Basic
+084	04	qpdfview
+085	04	Zathura
+086	04	Sioyek
+087	04	MuPDF
+088	04	Calibre
+089	04	Foliate
+090	04	KOReader
+091	04	FBReader
+092	04	Sigil
+093	04	Master PDF Editor
+094	04	PDF Studio
+095	04	Stirling-PDF
+096	04	LibreOffice Draw
+097	04	Rnote
+098	04	Papers (GNOME)
+099	04	ePDFView
+100	04	Comix
+101	04	YACReader
+102	04	Bookworm
+103	05	GIMP
+104	05	Krita
+105	05	Inkscape
+106	05	darktable
+107	05	RawTherapee
+108	05	digiKam
+109	05	Shotwell
+110	05	Pinta
+111	05	MyPaint
+112	05	Drawing
+113	05	KolourPaint
+114	05	LazPaint
+115	05	Pixelorama
+116	05	G'MIC
+117	05	Hugin
+118	05	Luminance HDR
+119	05	ImageMagick
+120	05	GraphicsMagick
+121	05	Gwenview
+122	05	Eye of GNOME
+123	05	nomacs
+124	05	XnView MP
+125	05	Geeqie
+126	05	Ristretto
+127	05	feh
+128	05	sxiv
+129	05	qView
+130	05	Flameshot
+131	05	Shutter
+132	05	Ksnip
+133	05	Spectacle
+134	05	PhotoCollage
+135	05	Fotoxx
+136	05	Entangle
+137	05	Rapid Photo Downloader
+138	06	Blender
+139	06	FreeCAD
+140	06	OpenSCAD
+141	06	LibreCAD
+142	06	QCAD Community Edition
+143	06	SolveSpace
+144	06	BRL-CAD
+145	06	KiCad
+146	06	Fritzing
+147	06	QElectroTech
+148	06	Sweet Home 3D
+149	06	PrusaSlicer
+150	06	OrcaSlicer
+151	06	Ultimaker Cura
+152	06	Slic3r
+153	06	SuperSlicer
+154	06	Bambu Studio
+155	06	MeshLab
+156	06	CloudCompare
+157	06	Kiri:Moto
+158	06	LeoCAD
+159	06	Wings 3D
+160	06	MakeHuman
+161	06	Aseprite
+162	06	OpenToonz
+163	06	Synfig Studio
+164	06	Pencil2D
+165	06	TupiTube Desk
+166	07	Kdenlive
+167	07	Shotcut
+168	07	OpenShot
+169	07	Pitivi
+170	07	Flowblade
+171	07	Olive Video Editor
+172	07	LosslessCut
+173	07	Avidemux
+174	07	HandBrake
+175	07	OBS Studio
+176	07	SimpleScreenRecorder
+177	07	vokoscreenNG
+178	07	Kooha
+179	07	Kazam
+180	07	Peek
+181	07	GPU Screen Recorder
+182	07	Natron
+183	07	Cinelerra-GG
+184	07	DaVinci Resolve
+185	07	Lightworks
+186	07	FFmpeg
+187	07	Shutter Encoder
+188	07	VidCutter
+189	07	Blender Video Editor
+190	07	Green Recorder
+191	07	recordMyDesktop
+192	08	Audacity
+193	08	Ardour
+194	08	LMMS
+195	08	REAPER
+196	08	Bitwig Studio
+197	08	Qtractor
+198	08	Rosegarden
+199	08	MuseScore
+200	08	Hydrogen
+201	08	Mixxx
+202	08	Carla
+203	08	JACK Audio Connection Kit
+204	08	PipeWire
+205	08	QjackCtl
+206	08	Guitarix
+207	08	Rakarrack
+208	08	Yoshimi
+209	08	ZynAddSubFX
+210	08	Surge XT
+211	08	Helm Synthesizer
+212	08	Vital Synth
+213	08	Renoise
+214	08	Ocenaudio
+215	08	Sonic Visualiser
+216	08	Tenacity
+217	08	MuseScore Studio
+218	08	Giada
+219	08	Seq24
+220	08	drumkv1
+221	08	Bristol Synthesizer
+222	08	SoX
+223	08	EasyEffects
+224	08	PulseAudio Volume Control
+225	08	qpwgraph
+226	08	Helvum
+227	09	VLC
+228	09	MPV
+229	09	Celluloid
+230	09	SMPlayer
+231	09	Haruna
+232	09	Kodi
+233	09	Plex HTPC
+234	09	Jellyfin Media Player
+235	09	Stremio
+236	09	Strawberry Music Player
+237	09	Clementine
+238	09	Amarok
+239	09	Elisa
+240	09	Rhythmbox
+241	09	Lollypop
+242	09	Tauon Music Box
+243	09	Audacious
+244	09	DeaDBeeF
+245	09	Quod Libet
+246	09	Qmmp
+247	09	cmus
+248	09	musikcube
+249	09	MusicBrainz Picard
+250	09	Kid3
+251	09	EasyTAG
+252	09	Puddletag
+253	09	Cantata
+254	09	MPC Qt
+255	09	GNOME Music
+256	10	Signal Desktop
+257	10	Telegram Desktop
+258	10	Element
+259	10	Discord
+260	10	Slack
+261	10	Zoom
+262	10	Jitsi Meet
+263	10	Mattermost Desktop
+264	10	Rocket.Chat
+265	10	Zulip
+266	10	Wire
+267	10	Session
+268	10	Jami
+269	10	Dino
+270	10	Gajim
+271	10	Pidgin
+272	10	WeeChat
+273	10	HexChat
+274	10	Irssi
+275	10	Mumble
+276	10	TeamSpeak Client
+277	10	Tox
+278	10	qTox
+279	10	Delta Chat
+280	10	Ferdium
+281	10	Vesktop
+282	10	Fractal
+283	10	Nheko
+284	10	Tokodon
+285	10	Kasts
+286	10	SchildiChat
+287	10	Psi+
+288	10	profanity (XMPP CLI)
+289	10	Linphone
+290	10	Ekiga
+291	10	jami-daemon
+292	11	Steam
+293	11	Lutris
+294	11	Heroic Games Launcher
+295	11	Bottles
+296	11	Gamescope
+297	11	MangoHud
+298	11	GOverlay
+299	11	GameMode
+300	11	ProtonUp-Qt
+301	11	Protontricks
+302	11	Minigalaxy
+303	11	Prism Launcher
+304	11	GDLauncher
+305	11	ATLauncher
+306	11	FTB App
+307	11	0 A.D.
+308	11	SuperTuxKart
+309	11	Luanti
+310	11	The Battle for Wesnoth
+311	11	OpenRA
+312	11	Xonotic
+313	11	Warzone 2100
+314	11	Hedgewars
+315	11	Sauerbraten
+316	11	Teeworlds
+317	11	OpenTTD
+318	11	Freeciv
+319	11	FreeCol
+320	11	Red Eclipse
+321	11	Veloren
+322	11	Freedoom
+323	11	The Ur-Quan Masters
+324	11	Endless Sky
+325	11	SuperTux
+326	11	Pingus
+327	11	Frozen Bubble
+328	11	PokerTH
+329	11	Mindustry
+330	11	Shattered Pixel Dungeon
+331	11	Dungeon Crawl Stone Soup
+332	11	NetHack
+333	11	Angband
+334	11	Extreme Tux Racer
+335	11	Neverball
+336	11	Neverputt
+337	11	Secret Maryo Chronicles
+338	12	RetroArch
+339	12	MAME
+340	12	DOSBox Staging
+341	12	ScummVM
+342	12	PPSSPP
+343	12	Dolphin Emulator
+344	12	PCSX2
+345	12	RPCS3
+346	12	DuckStation
+347	12	melonDS
+348	12	mGBA
+349	12	SameBoy
+350	12	Mednafen
+351	12	FS-UAE
+352	12	Hatari
+353	12	openMSX
+354	12	xemu
+355	12	Flycast
+356	12	Cemu
+357	12	Azahar Emulator
+358	12	VICE
+359	12	Stella
+360	12	bsnes
+361	12	Nestopia UE
+362	12	VisualBoyAdvance-M
+363	12	PCem
+364	12	86Box
+365	12	Recalbox
+366	12	Mupen64Plus
+367	12	ares Emulator
+368	12	Gearboy
+369	12	Gambatte
+370	12	DOSBox-X
+371	12	DeSmuME
+372	13	Visual Studio Code
+373	13	VSCodium
+374	13	Eclipse IDE
+375	13	IntelliJ IDEA Community
+376	13	PyCharm Community
+377	13	Android Studio
+378	13	Qt Creator
+379	13	KDevelop
+380	13	GNOME Builder
+381	13	Geany
+382	13	Kate
+383	13	GNU Emacs
+384	13	Vim
+385	13	Neovim
+386	13	Sublime Text
+387	13	Zed
+388	13	Lapce
+389	13	Lite XL
+390	13	Bluefish
+391	13	Code::Blocks
+392	13	Lazarus IDE
+393	13	Spyder
+394	13	Thonny
+395	13	Mu Editor
+396	13	Arduino IDE
+397	13	Godot Engine
+398	13	Unity Hub
+399	13	Wing IDE
+400	13	Eric Python IDE
+401	13	Apache NetBeans
+402	13	Anjuta
+403	13	CudaText
+404	13	JupyterLab
+405	13	RStudio
+406	13	GNU Octave GUI
+407	14	Git
+408	14	GitHub CLI
+409	14	GitLab CLI
+410	14	Node.js
+411	14	npm
+412	14	pnpm
+413	14	Yarn
+414	14	Bun
+415	14	Deno
+416	14	Python 3
+417	14	pipx
+418	14	Poetry
+419	14	uv
+420	14	Conda
+421	14	Miniconda
+422	14	Rustup
+423	14	Go
+424	14	OpenJDK
+425	14	.NET SDK
+426	14	PHP
+427	14	Composer
+428	14	Ruby
+429	14	rbenv
+430	14	Perl
+431	14	R language
+432	14	GCC
+433	14	Clang/LLVM
+434	14	GNU Make
+435	14	CMake
+436	14	Ninja
+437	14	Meson
+438	14	Bazel
+439	14	Gradle
+440	14	Maven
+441	14	Apache Ant
+442	14	SCons
+443	14	Autoconf
+444	14	GDB
+445	14	LLDB
+446	14	Valgrind
+447	14	strace
+448	14	ltrace
+449	14	Linux perf
+450	14	ccache
+451	14	pre-commit
+452	14	just
+453	14	Task
+454	14	Doxygen
+455	14	Graphviz
+456	14	SWIG
+457	14	Cython
+458	14	OpenSSL CLI
+459	14	pkg-config
+460	14	Git LFS
+461	14	delta (diff viewer)
+462	14	Tokei
+463	14	Hyperfine
+464	15	Docker Engine
+465	15	Podman
+466	15	Docker Compose
+467	15	Buildah
+468	15	Skopeo
+469	15	containerd
+470	15	Kubernetes kubectl
+471	15	Helm
+472	15	minikube
+473	15	kind
+474	15	k3d
+475	15	k9s
+476	15	OpenShift CLI (oc)
+477	15	Vagrant
+478	15	QEMU
+479	15	KVM
+480	15	virt-manager
+481	15	GNOME Boxes
+482	15	VirtualBox
+483	15	VMware Workstation Pro
+484	15	Multipass
+485	15	Incus
+486	15	LXD
+487	15	LXC
+488	15	Packer
+489	15	Terraform
+490	15	OpenTofu
+491	15	Ansible
+492	15	Salt
+493	15	Puppet Agent
+494	15	Pulumi
+495	15	cloudflared
+496	15	Argo CD CLI
+497	15	Flux CLI
+498	15	Rancher Desktop
+499	15	Distrobox
+500	15	Toolbx
+501	15	Lima
+502	15	HashiCorp Consul
+503	15	HashiCorp Vault
+504	15	Nomad
+505	16	Postman
+506	16	Insomnia
+507	16	Bruno
+508	16	HTTPie
+509	16	curl
+510	16	wget
+511	16	aria2
+512	16	jq
+513	16	yq
+514	16	grpcurl
+515	16	mitmproxy
+516	16	Burp Suite Community
+517	16	OWASP ZAP
+518	16	SoapUI
+519	16	Kreya
+520	16	Yaak
+521	16	xh (HTTPie Rust)
+522	16	Resticprofile
+523	16	OpenAPI Generator
+524	16	Swagger UI
+525	16	Spectral CLI
+526	16	k6
+527	16	Apache JMeter
+528	16	Locust
+529	16	wrk
+530	16	hey HTTP load tester
+531	16	vegeta
+532	16	Newman
+533	16	Dredd
+534	17	PostgreSQL
+535	17	MySQL
+536	17	MariaDB
+537	17	SQLite
+538	17	MongoDB Community Server
+539	17	Redis
+540	17	Valkey
+541	17	CouchDB
+542	17	InfluxDB
+543	17	ClickHouse
+544	17	Neo4j
+545	17	Firebird
+546	17	TimescaleDB
+547	17	DuckDB
+548	17	DBeaver Community
+549	17	pgAdmin
+550	17	MySQL Workbench
+551	17	Beekeeper Studio
+552	17	MongoDB Compass
+553	17	RedisInsight
+554	17	DB Browser for SQLite
+555	17	Adminer
+556	17	phpMyAdmin
+557	17	DataGrip
+558	17	DbGate
+559	17	LiteCLI
+560	17	pgcli
+561	17	mycli
+562	17	usql
+563	17	SQLcl
+564	18	Wireshark
+565	18	Nmap
+566	18	tcpdump
+567	18	traceroute
+568	18	mtr
+569	18	iperf3
+570	18	netcat-openbsd
+571	18	socat
+572	18	OpenVPN
+573	18	WireGuard Tools
+574	18	Tailscale
+575	18	ZeroTier
+576	18	OpenConnect
+577	18	NetworkManager
+578	18	nmcli
+579	18	Remmina
+580	18	FreeRDP
+581	18	TigerVNC
+582	18	RealVNC Viewer
+583	18	RustDesk
+584	18	AnyDesk
+585	18	TeamViewer
+586	18	LocalSend
+587	18	KDE Connect
+588	18	GSConnect
+589	18	Netbird
+590	18	Headscale
+591	18	OpenSSH
+592	18	autossh
+593	18	rdesktop
+594	18	Angry IP Scanner
+595	18	Ettercap
+596	18	Bettercap
+597	18	Kismet
+598	18	arp-scan
+599	18	Ntopng
+600	18	iftop
+601	18	nethogs
+602	18	bmon
+603	18	Termshark
+604	18	Speedtest CLI
+605	18	FireHOL
+606	18	nload
+607	18	Bandwhich
+608	19	Nextcloud Desktop
+609	19	ownCloud Desktop
+610	19	Dropbox
+611	19	MEGAsync
+612	19	pCloud Drive
+613	19	Insync
+614	19	Seafile Client
+615	19	Syncthing
+616	19	rclone
+617	19	restic
+618	19	BorgBackup
+619	19	Vorta
+620	19	Duplicati
+621	19	Déjà Dup
+622	19	Timeshift
+623	19	Snapper
+624	19	Pika Backup
+625	19	Back In Time
+626	19	LuckyBackup
+627	19	FreeFileSync
+628	19	Grsync
+629	19	Duplicacy
+630	19	Kopia
+631	19	UrBackup Client
+632	19	Duplicity
+633	19	Rsync
+634	20	GParted
+635	20	KDE Partition Manager
+636	20	GNOME Disks
+637	20	Baobab
+638	20	ncdu
+639	20	dust
+640	20	dua-cli
+641	20	QDirStat
+642	20	Filelight
+643	20	BleachBit
+644	20	Stacer
+645	20	Mission Center
+646	20	btop
+647	20	htop
+648	20	Glances
+649	20	fastfetch
+650	20	HardInfo2
+651	20	CPU-X
+652	20	inxi
+653	20	lm_sensors
+654	20	Psensor
+655	20	CoolerControl
+656	20	fwupd
+657	20	Ventoy
+658	20	balenaEtcher
+659	20	Fedora Media Writer
+660	20	Impression
+661	20	USBImager
+662	20	Clonezilla
+663	20	Rescuezilla
+664	20	Partclone
+665	20	GNU ddrescue
+666	20	smartmontools
+667	20	nvme-cli
+668	20	hdparm
+669	20	TestDisk
+670	20	PhotoRec
+671	20	KDiskMark
+672	20	GNOME Firmware
+673	20	Raspberry Pi Imager
+674	20	KDE ISO Image Writer
+675	20	Diskscan
+676	20	Sysprof
+677	21	Ark
+678	21	File Roller
+679	21	Xarchiver
+680	21	Engrampa
+681	21	PeaZip
+682	21	7-Zip (7zz)
+683	21	unrar
+684	21	Dolphin
+685	21	Nautilus (Files)
+686	21	Thunar
+687	21	Nemo
+688	21	Caja
+689	21	PCManFM
+690	21	PCManFM-Qt
+691	21	Krusader
+692	21	Double Commander
+693	21	Midnight Commander
+694	21	lf file manager
+695	21	ranger
+696	21	nnn
+697	21	yazi
+698	21	Meld
+699	21	Kompare
+700	21	Diffuse
+701	21	Beyond Compare
+702	21	FSearch
+703	21	Catfish
+704	21	Recoll
+705	21	AngrySearch
+706	21	fdupes
+707	21	rmlint
+708	21	czkawka
+709	21	FSlint
+710	21	FileZilla
+711	21	gFTP
+712	21	lftp
+713	22	GNOME Terminal
+714	22	Konsole
+715	22	Xfce Terminal
+716	22	Tilix
+717	22	Alacritty
+718	22	Kitty
+719	22	WezTerm
+720	22	foot
+721	22	Rio Terminal
+722	22	Terminator
+723	22	tmux
+724	22	GNU Screen
+725	22	Zellij
+726	22	Zsh
+727	22	Fish
+728	22	Nushell
+729	22	Starship
+730	22	Oh My Zsh
+731	22	oh-my-posh
+732	22	direnv
+733	22	ShellCheck
+734	22	shfmt
+735	22	ripgrep
+736	22	fd
+737	22	fzf
+738	22	bat
+739	22	eza
+740	22	zoxide
+741	22	atuin
+742	22	micro editor
+743	22	Helix editor
+744	22	GNU nano
+745	22	VisiData
+746	22	Miller (mlr)
+747	22	GNU Parallel
+748	22	entr
+749	22	watchexec
+750	22	inotify-tools
+751	22	tldr
+752	22	tealdeer
+753	22	man-db
+754	22	cheat
+755	22	task-spooler
+756	23	KeePassXC
+757	23	Bitwarden Desktop
+758	23	1Password
+759	23	KeePass
+760	23	Enpass
+761	23	pass (Password Store)
+762	23	gopass
+763	23	GNOME Passwords and Keys (Seahorse)
+764	23	Kleopatra
+765	23	VeraCrypt
+766	23	Cryptomator
+767	23	cryptsetup
+768	23	GnuPG
+769	23	age
+770	23	sops
+771	23	ClamAV
+772	23	rkhunter
+773	23	chkrootkit
+774	23	Lynis
+775	23	OpenSCAP
+776	23	Fail2ban
+777	23	UFW
+778	23	firewalld
+779	23	OpenSnitch
+780	23	Portmaster
+781	23	Gufw
+782	23	CrowdSec
+783	23	AIDE
+784	23	YubiKey Manager
+785	23	Nitrokey App
+786	24	Stellarium
+787	24	Celestia
+788	24	KStars
+789	24	SkyChart
+790	24	GNU Octave
+791	24	SageMath
+792	24	GeoGebra
+793	24	QGIS
+794	24	GRASS GIS
+795	24	SAGA GIS
+796	24	gvSIG
+797	24	Marble Maps
+798	24	GCompris
+799	24	Tux Paint
+800	24	Tux Typing
+801	24	Anki
+802	24	Mnemosyne
+803	24	KAlgebra
+804	24	Kalzium
+805	24	KGeography
+806	24	KTurtle
+807	24	Dr. Geo
+808	24	FET Timetabling
+809	24	GoldenDict
+810	24	GoldenDict-ng
+811	24	Zotero
+812	24	JabRef
+813	24	Fiji (ImageJ)
+814	24	GNU PSPP
+815	24	LabPlot
+816	24	Veusz
+817	24	ParaView
+818	24	Gnuplot
+819	24	ROOT Data Analysis Framework
+820	25	GnuCash
+821	25	HomeBank
+822	25	KMyMoney
+823	25	Skrooge
+824	25	Money Manager Ex
+825	25	Beancount
+826	25	Ledger
+827	25	hledger
+828	25	Akaunting
+829	25	ERPNext
+830	25	Odoo Community
+831	25	Dolibarr
+832	25	Tryton
+833	25	InvoicePlane
+834	25	Manager.io
+835	25	OpenProject
+836	25	ProjectLibre
+837	25	GanttProject
+838	25	Kimai
+839	25	TimeTagger
+840	25	OrangeHRM
+841	25	SuiteCRM
+842	25	EspoCRM
+843	25	Metabase
+844	25	Apache Superset
+845	26	NewsFlash
+846	26	Liferea
+847	26	QuiteRSS
+848	26	Akregator
+849	26	RSS Guard
+850	26	Feeds (GNOME)
+851	26	Fluent Reader
+852	26	Newsboat
+853	26	Newsraft
+854	26	Miniflux
+855	26	FreshRSS
+856	26	Streamlink
+857	26	yt-dlp
+858	26	gPodder
+859	26	Podboat
+860	27	Nginx
+861	27	Apache HTTP Server
+862	27	Caddy
+863	27	HAProxy
+864	27	Traefik
+865	27	lighttpd
+866	27	OpenResty
+867	27	Mosquitto MQTT Broker
+868	27	EMQX
+869	27	RabbitMQ
+870	27	Apache Kafka
+871	27	NATS Server
+872	27	MinIO
+873	27	SeaweedFS
+874	27	Nextcloud Server
+875	27	ownCloud Server
+876	27	Seafile Server
+877	27	Immich
+878	27	PhotoPrism
+879	27	Jellyfin Server
+880	27	Navidrome
+881	27	Plex Media Server
+882	27	Emby Server
+883	27	Home Assistant
+884	27	openHAB
+885	27	Node-RED
+886	27	Grafana
+887	27	Prometheus
+888	27	Zabbix
+889	27	Netdata
+890	27	Uptime Kuma
+891	27	Gitea
+892	27	Forgejo
+893	27	GitLab CE
+894	27	Jenkins
+895	27	Woodpecker CI
+896	27	Vaultwarden
+897	27	AdGuard Home
+898	27	Pi-hole
+899	27	Authentik
+900	27	Keycloak
+901	27	Authelia
+902	27	Paperless-ngx
+903	27	BookStack
+904	27	Wiki.js
+905	27	Mastodon
+906	27	PeerTube
+907	27	Matrix Synapse
+908	27	conduwuit Matrix Server
+909	27	Prosody XMPP Server
+910	27	ejabberd
+911	27	Dovecot
+912	27	Postfix
+913	27	Rspamd
+914	27	Samba
+915	27	NFS-Kernel-Server
+916	27	ProFTPD
+917	27	vsftpd
+918	27	OpenLDAP
+919	27	FreeIPA
+920	27	FreePBX
+921	27	Asterisk
+922	27	Scrypted
+923	27	Frigate NVR
+924	27	Homebox
+925	27	Changedetection.io
+926	27	Wallabag
+927	27	Linkding
+928	27	IT-Tools
+929	28	GNOME Tweaks
+930	28	KDE System Settings
+931	28	dconf Editor
+932	28	Extension Manager
+933	28	CopyQ
+934	28	Klipper
+935	28	GPaste
+936	28	Pano Clipboard Manager
+937	28	Albert Launcher
+938	28	Ulauncher
+939	28	Rofi
+940	28	Wofi
+941	28	Fuzzel
+942	28	Walker Launcher
+943	28	Plank Dock
+944	28	Cairo-Dock
+945	28	Conky
+946	28	Variety Wallpaper Changer
+947	28	Nitrogen
+948	28	Redshift
+949	28	Gammastep
+950	28	Solaar
+951	28	Piper
+952	28	OpenRGB
+953	28	Polychromatic
+954	28	Input Remapper
+955	28	keyd
+956	28	xbindkeys
+957	28	AutoKey
+958	28	Barrier
+959	28	Input Leap
+960	28	Synergy
+961	28	Onboard
+962	28	Orca Screen Reader
+963	28	espeak-ng
+964	28	Festival Speech Synthesis
+965	28	KMag
+966	28	Magnus
+967	28	KMouseTool
+968	28	Unclutter
+969	28	Espanso
+970	28	Touchégg

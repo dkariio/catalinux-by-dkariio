@@ -1,0 +1,1093 @@
+CATÁLOGO DE PROGRAMAS PARA LINUX — BORRADOR 1
+Revisión inicial: noviembre de 2026
+==========================================================
+
+Total de entradas únicas: 970
+Número de categorías: 28
+
+OBJETIVO
+Este archivo es el catálogo inicial para un instalador interactivo de terminal al estilo Ninite/WinGet, orientado a Linux.
+Incluye aplicaciones de escritorio, herramientas de terminal, desarrollo, juegos, servidores y utilidades.
+
+CRITERIO DE COMPATIBILIDAD
+- Se han priorizado proyectos con versión Linux o paquetes Linux mantenidos/distribuidos por el editor o la comunidad.
+- 'Compatible con Linux' NO significa que cada entrada exista en los repositorios oficiales de todas las distribuciones.
+- Según el programa, la fuente de instalación podrá ser el repositorio de la distro, Flatpak/Flathub, Snap, AppImage o el paquete oficial DEB/RPM/tarball del editor.
+- En algunos casos puede ser necesario habilitar un repositorio externo, instalar una dependencia o aceptar una licencia.
+- El programa instalador futuro deberá comprobar previamente disponibilidad, arquitectura, versión de distro, fuente y permisos; no debe ejecutar comandos a ciegas.
+- Los nombres de este documento son nombres visibles para el usuario, no identificadores de paquete garantizados.
+
+NOTAS PARA LA SIGUIENTE FASE
+1) Convertir cada aplicación en una ficha con ID interno, nombre, categoría, descripción y fuentes alternativas.
+2) Mantener un mapa de identificadores por gestor (APT, DNF, Pacman, Zypper, APK, XBPS, etc.) y/o Flatpak/Snap/AppImage.
+3) Verificar la existencia del paquete antes de instalar y mostrar la fuente elegida.
+4) Pedir confirmación antes de instalar y no usar sudo sin explicar qué se va a ejecutar.
+5) No mezclar gestores ni instalar dos variantes de la misma aplicación sin avisar.
+
+FUENTES PARA VERIFICACIÓN POSTERIOR
+- Flathub: https://flathub.org/
+- Snap Store: https://snapcraft.io/store
+- Debian Packages: https://packages.debian.org/
+- Fedora Packages: https://packages.fedoraproject.org/
+- Arch Linux Packages: https://archlinux.org/packages/
+- Repology (comparación entre distribuciones): https://repology.org/
+
+CATÁLOGO
+==========================================================
+
+1. NAVEGADORES WEB
+------------------
+  001. Firefox
+  002. Chromium
+  003. Google Chrome
+  004. Brave
+  005. Vivaldi
+  006. Opera
+  007. Microsoft Edge
+  008. Tor Browser
+  009. LibreWolf
+  010. Ungoogled Chromium
+  011. GNOME Web (Epiphany)
+  012. Falkon
+  013. Konqueror
+  014. qutebrowser
+  015. Nyxt
+  016. Min Browser
+  017. Floorp
+  018. Waterfox
+  019. Pale Moon
+  020. SeaMonkey
+  021. Midori
+  022. Netsurf
+
+2. CORREO, CALENDARIO Y CONTACTOS
+---------------------------------
+  023. Thunderbird
+  024. Betterbird
+  025. Evolution
+  026. KMail
+  027. Geary
+  028. Mailspring
+  029. Claws Mail
+  030. Sylpheed
+  031. Balsa
+  032. Tuta Mail Desktop
+  033. Proton Mail Bridge
+  034. aerc
+  035. NeoMutt
+  036. Alpine Mail
+  037. KOrganizer
+  038. GNOME Calendar
+  039. Merkuro Calendar
+  040. KAddressBook
+  041. vdirsyncer
+  042. khal
+
+3. OFIMÁTICA, NOTAS Y PRODUCTIVIDAD
+-----------------------------------
+  043. LibreOffice
+  044. ONLYOFFICE Desktop Editors
+  045. WPS Office
+  046. FreeOffice
+  047. Calligra Suite
+  048. Apache OpenOffice
+  049. AbiWord
+  050. Gnumeric
+  051. Collabora Office
+  052. SoftMaker Office
+  053. FocusWriter
+  054. Ghostwriter
+  055. Apostrophe
+  056. MarkText
+  057. Typora
+  058. Zettlr
+  059. Joplin
+  060. Obsidian
+  061. Logseq
+  062. Trilium Notes
+  063. Standard Notes
+  064. QOwnNotes
+  065. Notesnook
+  066. CherryTree
+  067. AppFlowy
+  068. Anytype
+  069. SiYuan
+  070. XMind
+  071. Freeplane
+  072. Planner
+  073. Taskwarrior
+  074. Super Productivity
+  075. Getting Things GNOME
+  076. GNOME To Do
+  077. KTimeTracker
+
+4. PDF, DOCUMENTOS Y LIBROS ELECTRÓNICOS
+----------------------------------------
+  078. Okular
+  079. Evince
+  080. Atril
+  081. Xournal++
+  082. PDF Arranger
+  083. PDFsam Basic
+  084. qpdfview
+  085. Zathura
+  086. Sioyek
+  087. MuPDF
+  088. Calibre
+  089. Foliate
+  090. KOReader
+  091. FBReader
+  092. Sigil
+  093. Master PDF Editor
+  094. PDF Studio
+  095. Stirling-PDF
+  096. LibreOffice Draw
+  097. Rnote
+  098. Papers (GNOME)
+  099. ePDFView
+  100. Comix
+  101. YACReader
+  102. Bookworm
+
+5. IMAGEN, FOTOGRAFÍA Y DISEÑO GRÁFICO
+--------------------------------------
+  103. GIMP
+  104. Krita
+  105. Inkscape
+  106. darktable
+  107. RawTherapee
+  108. digiKam
+  109. Shotwell
+  110. Pinta
+  111. MyPaint
+  112. Drawing
+  113. KolourPaint
+  114. LazPaint
+  115. Pixelorama
+  116. G'MIC
+  117. Hugin
+  118. Luminance HDR
+  119. ImageMagick
+  120. GraphicsMagick
+  121. Gwenview
+  122. Eye of GNOME
+  123. nomacs
+  124. XnView MP
+  125. Geeqie
+  126. Ristretto
+  127. feh
+  128. sxiv
+  129. qView
+  130. Flameshot
+  131. Shutter
+  132. Ksnip
+  133. Spectacle
+  134. PhotoCollage
+  135. Fotoxx
+  136. Entangle
+  137. Rapid Photo Downloader
+
+6. CAD, MODELADO 3D, ELECTRÓNICA E IMPRESIÓN 3D
+-----------------------------------------------
+  138. Blender
+  139. FreeCAD
+  140. OpenSCAD
+  141. LibreCAD
+  142. QCAD Community Edition
+  143. SolveSpace
+  144. BRL-CAD
+  145. KiCad
+  146. Fritzing
+  147. QElectroTech
+  148. Sweet Home 3D
+  149. PrusaSlicer
+  150. OrcaSlicer
+  151. Ultimaker Cura
+  152. Slic3r
+  153. SuperSlicer
+  154. Bambu Studio
+  155. MeshLab
+  156. CloudCompare
+  157. Kiri:Moto
+  158. LeoCAD
+  159. Wings 3D
+  160. MakeHuman
+  161. Aseprite
+  162. OpenToonz
+  163. Synfig Studio
+  164. Pencil2D
+  165. TupiTube Desk
+
+7. EDICIÓN DE VÍDEO, CAPTURA Y STREAMING
+----------------------------------------
+  166. Kdenlive
+  167. Shotcut
+  168. OpenShot
+  169. Pitivi
+  170. Flowblade
+  171. Olive Video Editor
+  172. LosslessCut
+  173. Avidemux
+  174. HandBrake
+  175. OBS Studio
+  176. SimpleScreenRecorder
+  177. vokoscreenNG
+  178. Kooha
+  179. Kazam
+  180. Peek
+  181. GPU Screen Recorder
+  182. Natron
+  183. Cinelerra-GG
+  184. DaVinci Resolve
+  185. Lightworks
+  186. FFmpeg
+  187. Shutter Encoder
+  188. VidCutter
+  189. Blender Video Editor
+  190. Green Recorder
+  191. recordMyDesktop
+
+8. AUDIO, MÚSICA Y PRODUCCIÓN MUSICAL
+-------------------------------------
+  192. Audacity
+  193. Ardour
+  194. LMMS
+  195. REAPER
+  196. Bitwig Studio
+  197. Qtractor
+  198. Rosegarden
+  199. MuseScore
+  200. Hydrogen
+  201. Mixxx
+  202. Carla
+  203. JACK Audio Connection Kit
+  204. PipeWire
+  205. QjackCtl
+  206. Guitarix
+  207. Rakarrack
+  208. Yoshimi
+  209. ZynAddSubFX
+  210. Surge XT
+  211. Helm Synthesizer
+  212. Vital Synth
+  213. Renoise
+  214. Ocenaudio
+  215. Sonic Visualiser
+  216. Tenacity
+  217. MuseScore Studio
+  218. Giada
+  219. Seq24
+  220. drumkv1
+  221. Bristol Synthesizer
+  222. SoX
+  223. EasyEffects
+  224. PulseAudio Volume Control
+  225. qpwgraph
+  226. Helvum
+
+9. REPRODUCTORES MULTIMEDIA Y BIBLIOTECAS
+-----------------------------------------
+  227. VLC
+  228. MPV
+  229. Celluloid
+  230. SMPlayer
+  231. Haruna
+  232. Kodi
+  233. Plex HTPC
+  234. Jellyfin Media Player
+  235. Stremio
+  236. Strawberry Music Player
+  237. Clementine
+  238. Amarok
+  239. Elisa
+  240. Rhythmbox
+  241. Lollypop
+  242. Tauon Music Box
+  243. Audacious
+  244. DeaDBeeF
+  245. Quod Libet
+  246. Qmmp
+  247. cmus
+  248. musikcube
+  249. MusicBrainz Picard
+  250. Kid3
+  251. EasyTAG
+  252. Puddletag
+  253. Cantata
+  254. MPC Qt
+  255. GNOME Music
+
+10. MENSAJERÍA, CHAT, VIDEOLLAMADAS Y COLABORACIÓN
+--------------------------------------------------
+  256. Signal Desktop
+  257. Telegram Desktop
+  258. Element
+  259. Discord
+  260. Slack
+  261. Zoom
+  262. Jitsi Meet
+  263. Mattermost Desktop
+  264. Rocket.Chat
+  265. Zulip
+  266. Wire
+  267. Session
+  268. Jami
+  269. Dino
+  270. Gajim
+  271. Pidgin
+  272. WeeChat
+  273. HexChat
+  274. Irssi
+  275. Mumble
+  276. TeamSpeak Client
+  277. Tox
+  278. qTox
+  279. Delta Chat
+  280. Ferdium
+  281. Vesktop
+  282. Fractal
+  283. Nheko
+  284. Tokodon
+  285. Kasts
+  286. SchildiChat
+  287. Psi+
+  288. profanity (XMPP CLI)
+  289. Linphone
+  290. Ekiga
+  291. jami-daemon
+
+11. JUEGOS NATIVOS Y LANZADORES
+-------------------------------
+  292. Steam
+  293. Lutris
+  294. Heroic Games Launcher
+  295. Bottles
+  296. Gamescope
+  297. MangoHud
+  298. GOverlay
+  299. GameMode
+  300. ProtonUp-Qt
+  301. Protontricks
+  302. Minigalaxy
+  303. Prism Launcher
+  304. GDLauncher
+  305. ATLauncher
+  306. FTB App
+  307. 0 A.D.
+  308. SuperTuxKart
+  309. Luanti
+  310. The Battle for Wesnoth
+  311. OpenRA
+  312. Xonotic
+  313. Warzone 2100
+  314. Hedgewars
+  315. Sauerbraten
+  316. Teeworlds
+  317. OpenTTD
+  318. Freeciv
+  319. FreeCol
+  320. Red Eclipse
+  321. Veloren
+  322. Freedoom
+  323. The Ur-Quan Masters
+  324. Endless Sky
+  325. SuperTux
+  326. Pingus
+  327. Frozen Bubble
+  328. PokerTH
+  329. Mindustry
+  330. Shattered Pixel Dungeon
+  331. Dungeon Crawl Stone Soup
+  332. NetHack
+  333. Angband
+  334. Extreme Tux Racer
+  335. Neverball
+  336. Neverputt
+  337. Secret Maryo Chronicles
+
+12. EMULADORES Y JUEGOS RETRO
+-----------------------------
+  338. RetroArch
+  339. MAME
+  340. DOSBox Staging
+  341. ScummVM
+  342. PPSSPP
+  343. Dolphin Emulator
+  344. PCSX2
+  345. RPCS3
+  346. DuckStation
+  347. melonDS
+  348. mGBA
+  349. SameBoy
+  350. Mednafen
+  351. FS-UAE
+  352. Hatari
+  353. openMSX
+  354. xemu
+  355. Flycast
+  356. Cemu
+  357. Azahar Emulator
+  358. VICE
+  359. Stella
+  360. bsnes
+  361. Nestopia UE
+  362. VisualBoyAdvance-M
+  363. PCem
+  364. 86Box
+  365. Recalbox
+  366. Mupen64Plus
+  367. ares Emulator
+  368. Gearboy
+  369. Gambatte
+  370. DOSBox-X
+  371. DeSmuME
+
+13. IDE Y EDITORES DE CÓDIGO
+----------------------------
+  372. Visual Studio Code
+  373. VSCodium
+  374. Eclipse IDE
+  375. IntelliJ IDEA Community
+  376. PyCharm Community
+  377. Android Studio
+  378. Qt Creator
+  379. KDevelop
+  380. GNOME Builder
+  381. Geany
+  382. Kate
+  383. GNU Emacs
+  384. Vim
+  385. Neovim
+  386. Sublime Text
+  387. Zed
+  388. Lapce
+  389. Lite XL
+  390. Bluefish
+  391. Code::Blocks
+  392. Lazarus IDE
+  393. Spyder
+  394. Thonny
+  395. Mu Editor
+  396. Arduino IDE
+  397. Godot Engine
+  398. Unity Hub
+  399. Wing IDE
+  400. Eric Python IDE
+  401. Apache NetBeans
+  402. Anjuta
+  403. CudaText
+  404. JupyterLab
+  405. RStudio
+  406. GNU Octave GUI
+
+14. LENGUAJES, COMPILADORES Y HERRAMIENTAS DE DESARROLLO
+--------------------------------------------------------
+  407. Git
+  408. GitHub CLI
+  409. GitLab CLI
+  410. Node.js
+  411. npm
+  412. pnpm
+  413. Yarn
+  414. Bun
+  415. Deno
+  416. Python 3
+  417. pipx
+  418. Poetry
+  419. uv
+  420. Conda
+  421. Miniconda
+  422. Rustup
+  423. Go
+  424. OpenJDK
+  425. .NET SDK
+  426. PHP
+  427. Composer
+  428. Ruby
+  429. rbenv
+  430. Perl
+  431. R language
+  432. GCC
+  433. Clang/LLVM
+  434. GNU Make
+  435. CMake
+  436. Ninja
+  437. Meson
+  438. Bazel
+  439. Gradle
+  440. Maven
+  441. Apache Ant
+  442. SCons
+  443. Autoconf
+  444. GDB
+  445. LLDB
+  446. Valgrind
+  447. strace
+  448. ltrace
+  449. Linux perf
+  450. ccache
+  451. pre-commit
+  452. just
+  453. Task
+  454. Doxygen
+  455. Graphviz
+  456. SWIG
+  457. Cython
+  458. OpenSSL CLI
+  459. pkg-config
+  460. Git LFS
+  461. delta (diff viewer)
+  462. Tokei
+  463. Hyperfine
+
+15. CONTENEDORES, VIRTUALIZACIÓN Y DEVOPS
+-----------------------------------------
+  464. Docker Engine
+  465. Podman
+  466. Docker Compose
+  467. Buildah
+  468. Skopeo
+  469. containerd
+  470. Kubernetes kubectl
+  471. Helm
+  472. minikube
+  473. kind
+  474. k3d
+  475. k9s
+  476. OpenShift CLI (oc)
+  477. Vagrant
+  478. QEMU
+  479. KVM
+  480. virt-manager
+  481. GNOME Boxes
+  482. VirtualBox
+  483. VMware Workstation Pro
+  484. Multipass
+  485. Incus
+  486. LXD
+  487. LXC
+  488. Packer
+  489. Terraform
+  490. OpenTofu
+  491. Ansible
+  492. Salt
+  493. Puppet Agent
+  494. Pulumi
+  495. cloudflared
+  496. Argo CD CLI
+  497. Flux CLI
+  498. Rancher Desktop
+  499. Distrobox
+  500. Toolbx
+  501. Lima
+  502. HashiCorp Consul
+  503. HashiCorp Vault
+  504. Nomad
+
+16. API, HTTP Y HERRAMIENTAS PARA PROGRAMADORES
+-----------------------------------------------
+  505. Postman
+  506. Insomnia
+  507. Bruno
+  508. HTTPie
+  509. curl
+  510. wget
+  511. aria2
+  512. jq
+  513. yq
+  514. grpcurl
+  515. mitmproxy
+  516. Burp Suite Community
+  517. OWASP ZAP
+  518. SoapUI
+  519. Kreya
+  520. Yaak
+  521. xh (HTTPie Rust)
+  522. Resticprofile
+  523. OpenAPI Generator
+  524. Swagger UI
+  525. Spectral CLI
+  526. k6
+  527. Apache JMeter
+  528. Locust
+  529. wrk
+  530. hey HTTP load tester
+  531. vegeta
+  532. Newman
+  533. Dredd
+
+17. BASES DE DATOS Y CLIENTES SQL/NO-SQL
+----------------------------------------
+  534. PostgreSQL
+  535. MySQL
+  536. MariaDB
+  537. SQLite
+  538. MongoDB Community Server
+  539. Redis
+  540. Valkey
+  541. CouchDB
+  542. InfluxDB
+  543. ClickHouse
+  544. Neo4j
+  545. Firebird
+  546. TimescaleDB
+  547. DuckDB
+  548. DBeaver Community
+  549. pgAdmin
+  550. MySQL Workbench
+  551. Beekeeper Studio
+  552. MongoDB Compass
+  553. RedisInsight
+  554. DB Browser for SQLite
+  555. Adminer
+  556. phpMyAdmin
+  557. DataGrip
+  558. DbGate
+  559. LiteCLI
+  560. pgcli
+  561. mycli
+  562. usql
+  563. SQLcl
+
+18. REDES, DIAGNÓSTICO Y ACCESO REMOTO
+--------------------------------------
+  564. Wireshark
+  565. Nmap
+  566. tcpdump
+  567. traceroute
+  568. mtr
+  569. iperf3
+  570. netcat-openbsd
+  571. socat
+  572. OpenVPN
+  573. WireGuard Tools
+  574. Tailscale
+  575. ZeroTier
+  576. OpenConnect
+  577. NetworkManager
+  578. nmcli
+  579. Remmina
+  580. FreeRDP
+  581. TigerVNC
+  582. RealVNC Viewer
+  583. RustDesk
+  584. AnyDesk
+  585. TeamViewer
+  586. LocalSend
+  587. KDE Connect
+  588. GSConnect
+  589. Netbird
+  590. Headscale
+  591. OpenSSH
+  592. autossh
+  593. rdesktop
+  594. Angry IP Scanner
+  595. Ettercap
+  596. Bettercap
+  597. Kismet
+  598. arp-scan
+  599. Ntopng
+  600. iftop
+  601. nethogs
+  602. bmon
+  603. Termshark
+  604. Speedtest CLI
+  605. FireHOL
+  606. nload
+  607. Bandwhich
+
+19. SINCRONIZACIÓN, NUBE Y COPIAS DE SEGURIDAD
+----------------------------------------------
+  608. Nextcloud Desktop
+  609. ownCloud Desktop
+  610. Dropbox
+  611. MEGAsync
+  612. pCloud Drive
+  613. Insync
+  614. Seafile Client
+  615. Syncthing
+  616. rclone
+  617. restic
+  618. BorgBackup
+  619. Vorta
+  620. Duplicati
+  621. Déjà Dup
+  622. Timeshift
+  623. Snapper
+  624. Pika Backup
+  625. Back In Time
+  626. LuckyBackup
+  627. FreeFileSync
+  628. Grsync
+  629. Duplicacy
+  630. Kopia
+  631. UrBackup Client
+  632. Duplicity
+  633. Rsync
+
+20. DISCOS, PARTICIONES, ARCHIVOS Y MANTENIMIENTO
+-------------------------------------------------
+  634. GParted
+  635. KDE Partition Manager
+  636. GNOME Disks
+  637. Baobab
+  638. ncdu
+  639. dust
+  640. dua-cli
+  641. QDirStat
+  642. Filelight
+  643. BleachBit
+  644. Stacer
+  645. Mission Center
+  646. btop
+  647. htop
+  648. Glances
+  649. fastfetch
+  650. HardInfo2
+  651. CPU-X
+  652. inxi
+  653. lm_sensors
+  654. Psensor
+  655. CoolerControl
+  656. fwupd
+  657. Ventoy
+  658. balenaEtcher
+  659. Fedora Media Writer
+  660. Impression
+  661. USBImager
+  662. Clonezilla
+  663. Rescuezilla
+  664. Partclone
+  665. GNU ddrescue
+  666. smartmontools
+  667. nvme-cli
+  668. hdparm
+  669. TestDisk
+  670. PhotoRec
+  671. KDiskMark
+  672. GNOME Firmware
+  673. Raspberry Pi Imager
+  674. KDE ISO Image Writer
+  675. Diskscan
+  676. Sysprof
+
+21. GESTORES DE ARCHIVOS Y COMPRESIÓN
+-------------------------------------
+  677. Ark
+  678. File Roller
+  679. Xarchiver
+  680. Engrampa
+  681. PeaZip
+  682. 7-Zip (7zz)
+  683. unrar
+  684. Dolphin
+  685. Nautilus (Files)
+  686. Thunar
+  687. Nemo
+  688. Caja
+  689. PCManFM
+  690. PCManFM-Qt
+  691. Krusader
+  692. Double Commander
+  693. Midnight Commander
+  694. lf file manager
+  695. ranger
+  696. nnn
+  697. yazi
+  698. Meld
+  699. Kompare
+  700. Diffuse
+  701. Beyond Compare
+  702. FSearch
+  703. Catfish
+  704. Recoll
+  705. AngrySearch
+  706. fdupes
+  707. rmlint
+  708. czkawka
+  709. FSlint
+  710. FileZilla
+  711. gFTP
+  712. lftp
+
+22. TERMINALES, SHELLS Y UTILIDADES CLI
+---------------------------------------
+  713. GNOME Terminal
+  714. Konsole
+  715. Xfce Terminal
+  716. Tilix
+  717. Alacritty
+  718. Kitty
+  719. WezTerm
+  720. foot
+  721. Rio Terminal
+  722. Terminator
+  723. tmux
+  724. GNU Screen
+  725. Zellij
+  726. Zsh
+  727. Fish
+  728. Nushell
+  729. Starship
+  730. Oh My Zsh
+  731. oh-my-posh
+  732. direnv
+  733. ShellCheck
+  734. shfmt
+  735. ripgrep
+  736. fd
+  737. fzf
+  738. bat
+  739. eza
+  740. zoxide
+  741. atuin
+  742. micro editor
+  743. Helix editor
+  744. GNU nano
+  745. VisiData
+  746. Miller (mlr)
+  747. GNU Parallel
+  748. entr
+  749. watchexec
+  750. inotify-tools
+  751. tldr
+  752. tealdeer
+  753. man-db
+  754. cheat
+  755. task-spooler
+
+23. CONTRASEÑAS, CIFRADO Y SEGURIDAD
+------------------------------------
+  756. KeePassXC
+  757. Bitwarden Desktop
+  758. 1Password
+  759. KeePass
+  760. Enpass
+  761. pass (Password Store)
+  762. gopass
+  763. GNOME Passwords and Keys (Seahorse)
+  764. Kleopatra
+  765. VeraCrypt
+  766. Cryptomator
+  767. cryptsetup
+  768. GnuPG
+  769. age
+  770. sops
+  771. ClamAV
+  772. rkhunter
+  773. chkrootkit
+  774. Lynis
+  775. OpenSCAP
+  776. Fail2ban
+  777. UFW
+  778. firewalld
+  779. OpenSnitch
+  780. Portmaster
+  781. Gufw
+  782. CrowdSec
+  783. AIDE
+  784. YubiKey Manager
+  785. Nitrokey App
+
+24. CIENCIA, EDUCACIÓN, GIS Y ASTRONOMÍA
+----------------------------------------
+  786. Stellarium
+  787. Celestia
+  788. KStars
+  789. SkyChart
+  790. GNU Octave
+  791. SageMath
+  792. GeoGebra
+  793. QGIS
+  794. GRASS GIS
+  795. SAGA GIS
+  796. gvSIG
+  797. Marble Maps
+  798. GCompris
+  799. Tux Paint
+  800. Tux Typing
+  801. Anki
+  802. Mnemosyne
+  803. KAlgebra
+  804. Kalzium
+  805. KGeography
+  806. KTurtle
+  807. Dr. Geo
+  808. FET Timetabling
+  809. GoldenDict
+  810. GoldenDict-ng
+  811. Zotero
+  812. JabRef
+  813. Fiji (ImageJ)
+  814. GNU PSPP
+  815. LabPlot
+  816. Veusz
+  817. ParaView
+  818. Gnuplot
+  819. ROOT Data Analysis Framework
+
+25. CONTABILIDAD, FINANZAS Y GESTIÓN EMPRESARIAL
+------------------------------------------------
+  820. GnuCash
+  821. HomeBank
+  822. KMyMoney
+  823. Skrooge
+  824. Money Manager Ex
+  825. Beancount
+  826. Ledger
+  827. hledger
+  828. Akaunting
+  829. ERPNext
+  830. Odoo Community
+  831. Dolibarr
+  832. Tryton
+  833. InvoicePlane
+  834. Manager.io
+  835. OpenProject
+  836. ProjectLibre
+  837. GanttProject
+  838. Kimai
+  839. TimeTagger
+  840. OrangeHRM
+  841. SuiteCRM
+  842. EspoCRM
+  843. Metabase
+  844. Apache Superset
+
+26. RSS, NOTICIAS Y LECTORES DE CONTENIDO
+-----------------------------------------
+  845. NewsFlash
+  846. Liferea
+  847. QuiteRSS
+  848. Akregator
+  849. RSS Guard
+  850. Feeds (GNOME)
+  851. Fluent Reader
+  852. Newsboat
+  853. Newsraft
+  854. Miniflux
+  855. FreshRSS
+  856. Streamlink
+  857. yt-dlp
+  858. gPodder
+  859. Podboat
+
+27. SERVIDORES Y SERVICIOS AUTOGESTIONADOS
+------------------------------------------
+  860. Nginx
+  861. Apache HTTP Server
+  862. Caddy
+  863. HAProxy
+  864. Traefik
+  865. lighttpd
+  866. OpenResty
+  867. Mosquitto MQTT Broker
+  868. EMQX
+  869. RabbitMQ
+  870. Apache Kafka
+  871. NATS Server
+  872. MinIO
+  873. SeaweedFS
+  874. Nextcloud Server
+  875. ownCloud Server
+  876. Seafile Server
+  877. Immich
+  878. PhotoPrism
+  879. Jellyfin Server
+  880. Navidrome
+  881. Plex Media Server
+  882. Emby Server
+  883. Home Assistant
+  884. openHAB
+  885. Node-RED
+  886. Grafana
+  887. Prometheus
+  888. Zabbix
+  889. Netdata
+  890. Uptime Kuma
+  891. Gitea
+  892. Forgejo
+  893. GitLab CE
+  894. Jenkins
+  895. Woodpecker CI
+  896. Vaultwarden
+  897. AdGuard Home
+  898. Pi-hole
+  899. Authentik
+  900. Keycloak
+  901. Authelia
+  902. Paperless-ngx
+  903. BookStack
+  904. Wiki.js
+  905. Mastodon
+  906. PeerTube
+  907. Matrix Synapse
+  908. conduwuit Matrix Server
+  909. Prosody XMPP Server
+  910. ejabberd
+  911. Dovecot
+  912. Postfix
+  913. Rspamd
+  914. Samba
+  915. NFS-Kernel-Server
+  916. ProFTPD
+  917. vsftpd
+  918. OpenLDAP
+  919. FreeIPA
+  920. FreePBX
+  921. Asterisk
+  922. Scrypted
+  923. Frigate NVR
+  924. Homebox
+  925. Changedetection.io
+  926. Wallabag
+  927. Linkding
+  928. IT-Tools
+
+28. PERSONALIZACIÓN, ESCRITORIO Y ACCESIBILIDAD
+-----------------------------------------------
+  929. GNOME Tweaks
+  930. KDE System Settings
+  931. dconf Editor
+  932. Extension Manager
+  933. CopyQ
+  934. Klipper
+  935. GPaste
+  936. Pano Clipboard Manager
+  937. Albert Launcher
+  938. Ulauncher
+  939. Rofi
+  940. Wofi
+  941. Fuzzel
+  942. Walker Launcher
+  943. Plank Dock
+  944. Cairo-Dock
+  945. Conky
+  946. Variety Wallpaper Changer
+  947. Nitrogen
+  948. Redshift
+  949. Gammastep
+  950. Solaar
+  951. Piper
+  952. OpenRGB
+  953. Polychromatic
+  954. Input Remapper
+  955. keyd
+  956. xbindkeys
+  957. AutoKey
+  958. Barrier
+  959. Input Leap
+  960. Synergy
+  961. Onboard
+  962. Orca Screen Reader
+  963. espeak-ng
+  964. Festival Speech Synthesis
+  965. KMag
+  966. Magnus
+  967. KMouseTool
+  968. Unclutter
+  969. Espanso
+  970. Touchégg
+
+==========================================================
+FIN DEL CATÁLOGO — 970 PROGRAMAS ÚNICOS

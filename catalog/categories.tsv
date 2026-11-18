@@ -1,0 +1,28 @@
+01	Navegadores web	Web browsers	Веб-браузеры
+02	Correo, calendario y contactos	Email, calendar & contacts	Почта, календарь и контакты
+03	Ofimática, notas y productividad	Office, notes & productivity	Офис, заметки и продуктивность
+04	PDF, documentos y libros electrónicos	PDF, documents & e-books	PDF, документы и электронные книги
+05	Imagen, fotografía y diseño gráfico	Image, photography & graphic design	Изображения, фото и графический дизайн
+06	CAD, modelado 3D, electrónica e impresión 3D	CAD, 3D, electronics & 3D printing	САПР, 3D, электроника и 3D-печать
+07	Edición de vídeo, captura y streaming	Video editing, capture & streaming	Видеомонтаж, запись и стриминг
+08	Audio, música y producción musical	Audio, music & music production	Аудио, музыка и звукозапись
+09	Reproductores multimedia y bibliotecas	Media players & libraries	Медиаплееры и библиотеки
+10	Mensajería, chat, videollamadas y colaboración	Messaging, chat, video calls & collaboration	Мессенджеры, чаты, видеозвонки и совместная работа
+11	Juegos nativos y lanzadores	Native games & launchers	Нативные игры и лаунчеры
+12	Emuladores y juegos retro	Emulators & retro games	Эмуляторы и ретро-игры
+13	IDE y editores de código	IDEs & code editors	Среды разработки и редакторы кода
+14	Lenguajes, compiladores y herramientas de desarrollo	Languages, compilers & developer tools	Языки, компиляторы и инструменты разработки
+15	Contenedores, virtualización y DevOps	Containers, virtualization & DevOps	Контейнеры, виртуализация и DevOps
+16	API, HTTP y herramientas para programadores	API, HTTP & developer tools	API, HTTP и инструменты для разработчиков
+17	Bases de datos y clientes SQL/NoSQL	Databases & SQL/NoSQL clients	Базы данных и клиенты SQL/NoSQL
+18	Redes, diagnóstico y acceso remoto	Networking, diagnostics & remote access	Сети, диагностика и удалённый доступ
+19	Sincronización, nube y copias de seguridad	Sync, cloud & backups	Синхронизация, облако и резервное копирование
+20	Discos, particiones, archivos y mantenimiento	Disks, partitions, files & maintenance	Диски, разделы, файлы и обслуживание
+21	Gestores de archivos y compresión	File managers & compression	Файловые менеджеры и архиваторы
+22	Terminales, shells y utilidades CLI	Terminals, shells & CLI utilities	Терминалы, оболочки и CLI-утилиты
+23	Contraseñas, cifrado y seguridad	Passwords, encryption & security	Пароли, шифрование и безопасность
+24	Ciencia, educación, GIS y astronomía	Science, education, GIS & astronomy	Наука, образование, ГИС и астрономия
+25	Contabilidad, finanzas y gestión empresarial	Accounting, finance & business management	Бухгалтерия, финансы и управление бизнесом
+26	RSS, noticias y lectores de contenido	RSS, news & content readers	RSS, новости и программы для чтения
+27	Servidores y servicios autogestionados	Servers & self-hosted services	Серверы и самостоятельно размещаемые сервисы
+28	Personalización, escritorio y accesibilidad	Customization, desktop & accessibility	Настройка, рабочий стол и доступность
