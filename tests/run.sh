@@ -8,9 +8,10 @@ bash -n locales/es.sh
 bash -n locales/en.sh
 bash -n locales/ru.sh
 bash -n tests/run.sh
+bash -n tests/test-parsers.sh
 
 ./linux-catalog.sh --self-test
-[[ "$(./linux-catalog.sh --version)" == '1.0.0' ]]
+[[ "$(./linux-catalog.sh --version)" == '1.0.1' ]]
 ./linux-catalog.sh --help >/dev/null
 search_output="$(./linux-catalog.sh --search Firefox)"
 grep -q $'001\tFirefox' <<< "$search_output"
@@ -18,6 +19,16 @@ grep -q $'001\tFirefox' <<< "$search_output"
 # Exercise category navigation without requiring a TTY.
 ui_output="$(printf '1\n1\nb\nb\n0\n' | ./linux-catalog.sh --lang en)"
 grep -q 'See you next time' <<< "$ui_output"
+
+# Verify the interactive exit message is translated in all supported languages.
+for language in es en ru; do
+  language_output="$(printf '0\n' | ./linux-catalog.sh --lang "$language")"
+  case "$language" in
+    es) grep -q 'Hasta pronto' <<< "$language_output" ;;
+    en) grep -q 'See you next time' <<< "$language_output" ;;
+    ru) grep -q 'До встречи' <<< "$language_output" ;;
+  esac
+done
 
 # Mock APT metadata to verify candidate discovery without installing anything.
 mock_dir="$(mktemp -d)"
@@ -43,5 +54,7 @@ if grep -q 'Unexpected package installation in test' <<< "$mock_output"; then
   printf 'FAIL: mock package installer was unexpectedly executed\n' >&2
   exit 1
 fi
+
+./tests/test-parsers.sh
 
 printf '\nAll tests passed.\n'

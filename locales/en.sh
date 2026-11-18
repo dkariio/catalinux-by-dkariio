@@ -53,6 +53,7 @@ msg() {
     running_install) printf 'Running the package manager. Read and confirm any operation it requests…' ;;
     install_success) printf '✅ Package manager completed successfully.' ;;
     install_failed) printf '⚠️ Installation failed. Exit code:' ;;
+    snap_devmode_blocked) printf 'This Snap requires devmode confinement; installation was stopped for security.' ;;
     unsupported_source) printf 'Unsupported installation source.' ;;
     sudo_missing) printf 'sudo is missing. Run as root or install sudo.' ;;
     goodbye) printf 'See you next time! 🐧' ;;

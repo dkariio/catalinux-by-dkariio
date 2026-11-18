@@ -1,0 +1,4 @@
+ES: Catálogo e instalador Linux en Bash, multidioma y compatible con APT, DNF, Pacman, Zypper, APK, XBPS, Flatpak y Snap. | EN: A multilingual Bash Linux app catalog and installer supporting APT, DNF, Pacman, Zypper, APK, XBPS, Flatpak and Snap.
+
+Suggested GitHub topics:
+linux, bash, package-manager, app-installer, terminal, cli, flatpak, snap, apt, pacman, dnf, zypper, apk, xbps, gentoo, solus

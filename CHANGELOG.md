@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.1] - 2026-11-18
+
+### Fixed
+- Corrected Flatpak result parsing by requesting explicit application ID and remote columns.
+- Corrected Solus eopkg search parsing to read `package - description` result lines.
+- Improved APK and XBPS version parsing to preserve hyphenated package names containing digits.
+- Improved fallback search terms for multi-word application names.
+- Added Snap classic-confinement handling and blocked devmode Snaps rather than silently weakening confinement.
+- Made the script safe to source from tests without launching the interactive menu.
+
+### Tests
+- Added parser tests for Flatpak, eopkg, APK, XBPS, DNF, DNF5, Pacman, Zypper, Portage, and Snap.
+- Added mocked installation-dispatch tests for all supported backends; tests do not install packages.
+
 ## [1.0.0] - 2026-11-18
 
 ### Added

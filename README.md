@@ -1,8 +1,8 @@
-# 🐧 CataLinux by @dkariio
+# 🐧 Dkariio Linux App Catalog
 
 **A multilingual Linux application catalog and terminal installer — created by [@dkariio](https://www.instagram.com/dkariio/).**
 
-> **Version:** 1.0.0 · **Catalog:** 970 applications · **Categories:** 28 · **Languages:** Español / English / Русский
+> **Version:** 1.0.1 · **Catalog:** 970 applications · **Categories:** 28 · **Languages:** Español / English / Русский
 
 ---
 
@@ -14,7 +14,7 @@ Dkariio Linux App Catalog es un catálogo interactivo de aplicaciones para Linux
 
 La interfaz está disponible en **español, inglés y ruso**. No necesita `dialog`, `whiptail`, `fzf`, `gum` ni una interfaz gráfica: funciona directamente en la terminal con Bash.
 
-### 📦 Gestores y fuentes compatibles en v1.0
+### 📦 Gestores y fuentes compatibles en v1.0.1
 
 | Gestor / fuente | Familias / ejemplos | Búsqueda | Instalación |
 |---|---|:---:|:---:|
@@ -97,7 +97,9 @@ sudo make uninstall
 │   ├── es.sh
 │   ├── en.sh
 │   └── ru.sh
-├── tests/run.sh
+├── tests/
+│   ├── run.sh
+│   └── test-parsers.sh
 ├── .github/workflows/ci.yml
 ├── Makefile
 ├── LICENSE
@@ -108,14 +110,22 @@ sudo make uninstall
 └── SECURITY.md
 ```
 
-### ⚠️ Alcance y limitaciones de la versión 1.0
+### 🛠️ Correcciones de la versión 1.0.1
+
+- Flatpak solicita columnas explícitas `application,remotes` para leer el identificador real de la aplicación.
+- La búsqueda de Solus `eopkg` interpreta ahora las líneas `paquete - descripción`.
+- APK y XBPS separan la versión desde el último separador, conservando nombres de paquete con guiones y números.
+- Los Snap que requieren confinamiento `classic` se instalan con `--classic`; los paquetes `devmode` se bloquean por seguridad.
+- Las búsquedas de nombres compuestos usan el nombre normalizado completo en lugar de una primera palabra demasiado genérica.
+
+### ⚠️ Alcance y limitaciones de la versión 1.0.1
 
 - Los 970 nombres proceden del catálogo inicial incluido en este proyecto. Son nombres visibles, **no** identificadores de paquetes garantizados.
-- La búsqueda se basa en el primer término útil o en una pista de búsqueda mantenida en `catalog/search-hints.tsv`; por ello puede no encontrar algunas aplicaciones o mostrar más de un candidato.
+- La búsqueda usa un nombre normalizado y pistas mantenidas en `catalog/search-hints.tsv`; por ello puede no encontrar algunas aplicaciones o mostrar más de un candidato.
 - El usuario debe comprobar el nombre, fuente y descripción del candidato antes de confirmar.
 - No se instala desde AUR, repositorios PPA/RPM de terceros, archivos DEB/RPM descargados, AppImage, scripts del fabricante ni binarios externos.
 - No se habilitan repositorios, no se importan claves, no se actualiza todo el sistema ni se resuelven licencias automáticamente.
-- No se garantiza soporte de todas las distribuciones o arquitecturas existentes. v1.0 implementa los gestores indicados en la tabla; Nix/Guix y AUR quedan fuera de esta versión.
+- No se garantiza soporte de todas las distribuciones o arquitecturas existentes. v1.0.1 implementa los gestores indicados en la tabla; Nix/Guix y AUR quedan fuera de esta versión.
 - La instalación es de una aplicación por operación; todavía no hay cola de instalación múltiple.
 - Algunas aplicaciones del catálogo son servidores, servicios, complementos o herramientas especializadas, y su disponibilidad puede ser limitada.
 
@@ -137,7 +147,7 @@ Dkariio Linux App Catalog is an interactive Linux software catalog written in Ba
 
 The interface supports **Spanish, English, and Russian**. It does not require `dialog`, `whiptail`, `fzf`, `gum`, or a graphical desktop: it runs directly in your terminal using Bash.
 
-### 📦 Package managers and sources supported in v1.0
+### 📦 Package managers and sources supported in v1.0.1
 
 | Package manager / source | Families / examples | Search | Install |
 |---|---|:---:|:---:|
@@ -205,14 +215,22 @@ Uninstall:
 sudo make uninstall
 ```
 
-### ⚠️ v1.0 scope and limitations
+### 🛠️ v1.0.1 fixes
+
+- Flatpak requests explicit `application,remotes` columns to read the actual application ID.
+- Solus `eopkg` search now parses `package - description` result lines.
+- APK and XBPS version parsing preserves hyphenated package names containing digits.
+- Snap packages requiring `classic` confinement use `--classic`; `devmode` Snaps are blocked for safety.
+- Multi-word fallback searches use the complete normalized application name.
+
+### ⚠️ v1.0.1 scope and limitations
 
 - The 970 display names come from the initial catalog shipped with this project. They are **not** guaranteed package identifiers.
-- Search uses a useful leading term or a maintained hint in `catalog/search-hints.tsv`; it may miss some applications or return multiple candidates.
+- Search uses a normalized application-name slug or a maintained hint in `catalog/search-hints.tsv`; it may miss some applications or return multiple candidates.
 - Review the package name, source, and description before confirming.
 - AUR, third-party PPAs/RPM repositories, downloaded DEB/RPM files, AppImages, vendor scripts, and external binaries are not installed.
 - The program does not enable repositories, import signing keys, upgrade the whole system, or handle licenses automatically.
-- Support for every existing distribution or architecture is not guaranteed. v1.0 implements the package managers listed above; Nix/Guix and AUR are outside this release.
+- Support for every existing distribution or architecture is not guaranteed. v1.0.1 implements the package managers listed above; Nix/Guix and AUR are outside this release.
 - Installation is one application per operation; there is no multi-app installation queue yet.
 - Some catalog entries are servers, services, plugins, or specialist tools and may have limited package availability.
 
@@ -227,7 +245,7 @@ See [`SECURITY.md`](SECURITY.md) before installing software, and [`CONTRIBUTING.
 | Field | Value |
 |---|---|
 | Creator | **@dkariio** · [Instagram](https://www.instagram.com/dkariio/) |
-| Version | `1.0.0` |
+| Version | `1.0.1` |
 | Language | Bash (Bash 4+) |
 | License | MIT |
 | Repository name suggestion | `dkariio-linux-app-catalog` |

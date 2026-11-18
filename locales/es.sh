@@ -53,6 +53,7 @@ msg() {
     running_install) printf 'Ejecutando el gestor de paquetes. Lee y confirma cualquier operación que solicite…' ;;
     install_success) printf '✅ El gestor terminó correctamente.' ;;
     install_failed) printf '⚠️ La instalación ha fallado. Código de salida:' ;;
+    snap_devmode_blocked) printf 'Este Snap requiere confinamiento devmode; se ha detenido la instalación por seguridad.' ;;
     unsupported_source) printf 'Fuente de instalación no compatible.' ;;
     sudo_missing) printf 'Falta sudo. Ejecuta el programa como root o instala sudo.' ;;
     goodbye) printf '¡Hasta pronto! 🐧' ;;

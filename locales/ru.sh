@@ -53,6 +53,7 @@ msg() {
     running_install) printf 'Запуск менеджера пакетов. Проверьте и подтвердите запрошенные действия…' ;;
     install_success) printf '✅ Менеджер пакетов завершил работу успешно.' ;;
     install_failed) printf '⚠️ Ошибка установки. Код завершения:' ;;
+    snap_devmode_blocked) printf 'Для этого Snap требуется режим devmode; установка остановлена из соображений безопасности.' ;;
     unsupported_source) printf 'Источник установки не поддерживается.' ;;
     sudo_missing) printf 'Команда sudo не найдена. Запустите от root или установите sudo.' ;;
     goodbye) printf 'До встречи! 🐧' ;;

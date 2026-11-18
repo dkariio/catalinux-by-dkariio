@@ -3,7 +3,7 @@
 # Copyright (c) 2026 @dkariio
 set -Eeuo pipefail
 
-APP_VERSION='1.0.0'
+APP_VERSION='1.0.1'
 APP_ID='dkariio-linux-app-catalog'
 PROJECT_DIR="$(CDPATH='' cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 if [[ -f "$PROJECT_DIR/catalog/apps.tsv" ]]; then
@@ -319,9 +319,15 @@ search_term_for_app() {
   app="${app#gnu }"; app="${app#gnome }"; app="${app#kde }"
   app="${app#apache }"; app="${app#microsoft }"; app="${app#google }"
   app="${app#the }"; app="${app#mozilla }"
-  app="${app//[^a-z0-9+._-]/ }"
-  # Remove generic suffixes and use the first meaningful word as a search seed.
-  printf '%s\n' "$app" | awk '{for(i=1;i<=NF;i++) if($i !~ /^(desktop|server|client|editor|studio|gui|cli|application|app|tool|tools|basic|community|edition|suite)$/){print $i; exit}}'
+  # Use the complete normalized name rather than only its first word. The
+  # previous fallback searched for generic tokens such as "visual" or "web",
+  # which often returned unrelated packages. A slug is a safer search seed;
+  # explicit exceptions belong in catalog/search-hints.tsv.
+  app="${app//[^a-z0-9+._ -]/ }"
+  app="${app//[[:space:]]/-}"
+  while [[ "$app" == *--* ]]; do app="${app//--/-}"; done
+  app="${app#-}"; app="${app%-}"
+  printf '%s' "$app"
 }
 
 trim_text() { sed 's/^[[:space:]]*//; s/[[:space:]]*$//'; }
@@ -373,13 +379,17 @@ search_zypper() {
 }
 
 search_apk() {
-  local term="$1" line pkg
+  local term="$1" line pkg desc
   while IFS= read -r line; do
-    [[ "$line" == ERROR* || "$line" == WARNING* ]] && continue
+    [[ "$line" == ERROR* || "$line" == WARNING* || -z "$line" ]] && continue
     pkg="${line%%[[:space:]]*}"
-    pkg="$(printf '%s' "$pkg" | sed -E 's/-[0-9][A-Za-z0-9.+_~:-]*$//')"
-    candidate_add 'apk' "$pkg" ''
-  done < <(apk search "$term" 2>/dev/null || true)
+    # APK versions are split at the last "-<digit>" separator. Keep earlier
+    # hyphen-number portions because they may be part of the package name.
+    pkg="$(printf '%s' "$pkg" | sed -E 's/^(.*)-[0-9][A-Za-z0-9.+_~:-]*$/\1/')"
+    desc=''
+    [[ "$line" == *' - '* ]] && desc="${line#* - }"
+    candidate_add 'apk' "$pkg" "$desc"
+  done < <(apk search -v "$term" 2>/dev/null || apk search "$term" 2>/dev/null || true)
 }
 
 search_xbps() {
@@ -388,23 +398,27 @@ search_xbps() {
     first="${line%%[[:space:]]*}"
     first="${first#\[-\]}"
     first="${first#\[\*\]}"
+    first="${first#\[?\]}"
     first="$(printf '%s' "$first" | trim_text)"
     [[ -n "$first" ]] || continue
-    pkg="$(printf '%s\n' "$first" | sed -E 's/-[0-9][^ ]*$//')"
+    # XBPS results are pkgver strings (name-version); split at the last
+    # version separator so names containing hyphenated numbers survive.
+    pkg="$(printf '%s\n' "$first" | sed -E 's/^(.*)-[0-9][^ ]*$/\1/')"
     desc="${line#* }"
     candidate_add 'xbps' "$pkg" "$desc"
   done < <(xbps-query -R -s "$term" 2>/dev/null || true)
 }
 
 search_eopkg() {
-  local term="$1" line pkg
+  local term="$1" line pkg desc
   while IFS= read -r line; do
-    if [[ "$line" =~ ^Package[[:space:]]+([^[:space:]]+) ]]; then
-      pkg="${BASH_REMATCH[1]}"; candidate_add 'eopkg' "$pkg" ''
-    elif [[ "$line" =~ ^Name:[[:space:]]*([^[:space:]]+) ]]; then
-      pkg="${BASH_REMATCH[1]}"; candidate_add 'eopkg' "$pkg" ''
+    # eopkg search prints one result per line as: package-name - description.
+    # Older releases may not support --name, so retry the broader search.
+    if [[ "$line" =~ ^([^[:space:]]+)[[:space:]]+-[[:space:]]+(.+)$ ]]; then
+      pkg="${BASH_REMATCH[1]}"; desc="${BASH_REMATCH[2]}"
+      candidate_add 'eopkg' "$pkg" "$desc"
     fi
-  done < <(eopkg search "$term" 2>/dev/null || true)
+  done < <(eopkg --no-color search --name "$term" 2>/dev/null || eopkg --no-color search "$term" 2>/dev/null || true)
 }
 
 search_emerge() {
@@ -417,17 +431,19 @@ search_emerge() {
 }
 
 search_flatpak() {
-  local term="$1" line fields_count pkg remote name
-  local -a fields
+  local term="$1" line pkg remotes remote
   while IFS= read -r line; do
-    [[ "$line" == *Application*ID* || "$line" == *'---'* ]] && continue
-    read -r -a fields <<< "$line"
-    fields_count=${#fields[@]}
-    (( fields_count >= 5 )) || continue
-    pkg="${fields[1]}"; remote="${fields[$((fields_count-1))]}"; remote="${remote%;}"
-    name="${fields[0]}"
-    candidate_add 'flatpak' "$pkg" "$name" "$remote"
-  done < <(flatpak search "$term" 2>/dev/null || true)
+    [[ -z "$line" || "$line" == *'---'* ]] && continue
+    [[ "$line" =~ ^[[:space:]]*Application[[:space:]]+Remotes([[:space:]]|$) ]] && continue
+    # Request only stable machine-relevant columns. Parsing Flatpak's default
+    # table used to mistake the description for the app ID.
+    read -r pkg remotes _ <<< "$line"
+    [[ -n "$pkg" && -n "$remotes" ]] || continue
+    # If multiple remotes are listed, use the first one shown by Flatpak.
+    remote="${remotes%%,*}"
+    remote="${remote%,}"
+    candidate_add 'flatpak' "$pkg" 'Flatpak application' "$remote"
+  done < <(flatpak search --columns=application,remotes "$term" 2>/dev/null || true)
 }
 
 search_snap() {
@@ -506,7 +522,18 @@ install_candidate() {
     eopkg) run_privileged eopkg install "$package" ;;
     emerge) run_privileged emerge --ask "$package" ;;
     flatpak) flatpak install "$remote" "$package" ;;
-    snap) run_privileged snap install "$package" ;;
+    snap)
+      local confinement
+      confinement="$(snap info "$package" 2>/dev/null | awk -F':[[:space:]]*' '$1 == "confinement" {print tolower($2); exit}')"
+      case "$confinement" in
+        classic) run_privileged snap install --classic "$package" ;;
+        devmode)
+          printf '%s\n' "$(msg snap_devmode_blocked)"
+          return 2
+          ;;
+        *) run_privileged snap install "$package" ;;
+      esac
+      ;;
     *) printf '%s\n' "$(msg unsupported_source)"; return 2 ;;
   esac
   result=$?
@@ -556,7 +583,7 @@ category_for_app() {
 
 self_test() {
   local errors=0 count
-  count="$(awk -F '\t' 'NF==3 && $1 ~ /^[0-9]{3}$/ && $2 ~ /^[0-9]{2}$/ {n++} END{print n+0}' "$APPS_FILE")"
+  count="$(awk -F '\t' 'NF==3 && $1 ~ /^[0-9][0-9][0-9]$/ && $2 ~ /^[0-9][0-9]$/ {n++} END{print n+0}' "$APPS_FILE")"
   if [[ "$count" -lt 500 ]]; then printf 'FAIL: only %s catalog entries\n' "$count"; errors=1; else printf 'PASS: %s catalog entries\n' "$count"; fi
   if [[ "${#CAT_IDS[@]}" -lt 1 ]]; then printf 'FAIL: no categories\n'; errors=1; else printf 'PASS: %s categories\n' "${#CAT_IDS[@]}"; fi
   local dupes
@@ -565,6 +592,11 @@ self_test() {
   local name_dupes
   name_dupes="$(cut -f3 "$APPS_FILE" | tr '[:upper:]' '[:lower:]' | sort | uniq -d | wc -l | tr -d ' ')"
   if [[ "$name_dupes" != '0' ]]; then printf 'FAIL: duplicate application names (%s)\n' "$name_dupes"; errors=1; else printf 'PASS: application names are unique\n'; fi
+  local missing_categories bad_hints
+  missing_categories="$(awk -F '\t' 'NR==FNR {valid[$1]=1; next} NF==3 && !($2 in valid) {print $1; exit}' "$CATEGORIES_FILE" "$APPS_FILE")"
+  if [[ -n "$missing_categories" ]]; then printf 'FAIL: application references unknown category (ID %s)\n' "$missing_categories"; errors=1; else printf 'PASS: all applications reference known categories\n'; fi
+  bad_hints="$(awk -F '\t' 'NF!=2 || $1=="" || $2=="" {print NR; exit}' "$HINTS_FILE")"
+  if [[ -n "$bad_hints" ]]; then printf 'FAIL: malformed search hint on line %s\n' "$bad_hints"; errors=1; else printf 'PASS: search hints are well formed\n'; fi
   for f in "$DATA_DIR"/locales/{es,en,ru}.sh; do
     if [[ -r "$f" ]] && bash -n "$f"; then printf 'PASS: locale syntax %s\n' "$(basename "$f")"; else printf 'FAIL: locale syntax %s\n' "$f"; errors=1; fi
   done
@@ -615,4 +647,7 @@ main() {
   done
 }
 
-main "$@"
+# Allow tests to source the functions without starting the interactive UI.
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+  main "$@"
+fi
